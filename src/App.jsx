@@ -24,15 +24,13 @@ function MainApp(){
   const [playlistId, setPlaylistId] = useRecoilState(linkAtom);
 
   const fetchedData = useRecoilValue(fetchedDataSelector);
-  console.log(fetchedData)
+  
 
   return <div className='main'>
       <div className='playlist-link'>
         <input type="text" ref={link} placeholder='Enter A Playlist Link'/>
         <button onClick={(e)=>{
           setPlaylistId(link.current.value);
-          // console.log(playlist.current.value)
-          // console.log("indid",playlistId)
         }}>Get Playlist</button>
       </div>
     </div>
