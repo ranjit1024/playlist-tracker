@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", serif;
+}
+body {
+  background: linear-gradient(180deg, #d9d9d9 99%, #737373 100%);
+}
+.main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.playlist-link input {
+  width: 60vw;
+  height: 3.5rem;
+  border-radius: 10px;
+  border: none;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.playlist-link button {
+  height: 3.4rem;
+  border-radius: 10px;
+
+  border: none;
+  margin-left: 2rem;
+  /* cursor: pointer; */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  font-size: 20px;
+  padding: 10px;
+  &:hover{
+    background-color: darkgreen;
+    color: white;
+    cursor: pointer;
+  }
+}
